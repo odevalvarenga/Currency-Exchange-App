@@ -1,5 +1,6 @@
 import Header from './components/Header.jsx';
 import CurrencyConverter from './components/CurrencyConverter.jsx';
+import HistorySection from './components/HistorySection.jsx';
 
 export default function App() {
   return (
@@ -13,6 +14,8 @@ export default function App() {
         </section>
 
         <CurrencyConverter />
+
+        <HistorySection />
       </main>
     </>
   );
