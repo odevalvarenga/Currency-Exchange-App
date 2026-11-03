@@ -8,6 +8,8 @@ import { getHistoricalRates } from '../services/frankfurterService';
 
 import styles from './HistorySection.module.css';
 
+import HistoryTable from './HistoryTable/HistoryTable';
+
 const periodOptions = {
   '7': { amount: 7, unit: 'days' },
   '15': { amount: 15, unit: 'days' },
@@ -155,6 +157,11 @@ export default function HistorySection() {
         quote={quote}
         loading={loading}
         error={error}
+      />
+      <HistoryTable
+        data={history}
+        base={base}
+        quote={quote}
       />
     </section>
   );
