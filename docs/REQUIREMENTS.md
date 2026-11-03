@@ -1,12 +1,12 @@
-REQUIREMENTS — Currency Exchange App
+# REQUIREMENTS — HERMES | Currency Exchange App
 
-1. Contexto do projeto
+## 1. Contexto do projeto
 
-O Currency Exchange App é uma aplicação web de página única (SPA), desenvolvida em React e JavaScript, destinada à consulta de taxas de câmbio, conversão de valores e análise histórica de moedas.
+O HERMES — Currency Exchange App é uma aplicação web de página única (SPA), desenvolvida em React e JavaScript, destinada à consulta de taxas de câmbio, conversão de valores e análise histórica de moedas.
 
-A aplicação utilizará a API Frankfurter para obter taxas de câmbio e informações históricas, centralizando em uma única interface funcionalidades que normalmente exigiriam consultas em diferentes sites e planilhas.
+A aplicação utiliza a API Frankfurter para obter taxas de câmbio e informações históricas, centralizando em uma única interface funcionalidades que normalmente exigiriam consultas em diferentes sites e planilhas.
 
-2. Público-alvo
+## 2. Público-alvo
 
 Pessoas que precisam consultar cotações, converter valores entre moedas e acompanhar a variação histórica das taxas de câmbio.
 
@@ -15,13 +15,13 @@ Exemplos:
 - Usuários que precisam realizar conversões para planejamento financeiro.
 - Pessoas que desejam consultar e comparar cotações em diferentes períodos.
 
-3. Objetivo
+## 3. Objetivo
 
 Desenvolver uma aplicação React que permita selecionar moedas, informar valores, realizar conversões utilizando taxas obtidas pela API Frankfurter, consultar o histórico de cotações, visualizar os dados em gráficos e tabelas, aplicar filtros e exportar os resultados em CSV.
 
-4. Escopo do projeto
+## 4. Escopo do projeto
 
-4.1 Funcionalidades incluídas
+### 4.1 Funcionalidades incluídas
 
 - Seleção de moeda de origem e destino.
 - Entrada de valor para conversão.
@@ -37,7 +37,7 @@ Desenvolver uma aplicação React que permita selecionar moedas, informar valore
 - Exportação dos registros filtrados em CSV.
 - Tratamento de carregamento, erros e ausência de dados.
 
-4.2 Funcionalidades fora do escopo
+### 4.2 Funcionalidades fora do escopo
 
 - Autenticação de usuários.
 - Cadastro de usuários.
@@ -46,7 +46,7 @@ Desenvolver uma aplicação React que permita selecionar moedas, informar valore
 - Pagamentos.
 - Compra ou venda real de moedas.
 
-5. Requisitos funcionais
+## 5. Requisitos funcionais
 
 | ID | Requisito |
 |---|---|
@@ -69,7 +69,7 @@ Desenvolver uma aplicação React que permita selecionar moedas, informar valore
 | RF17 | Impedir a exportação quando não houver registros. |
 | RF18 | Apresentar estados de carregamento, erro e ausência de dados. |
 
-6. Requisitos não funcionais
+## 6. Requisitos não funcionais
 
 | ID | Requisito |
 |---|---|
@@ -85,7 +85,7 @@ Desenvolver uma aplicação React que permita selecionar moedas, informar valore
 | RNF10 | O projeto deverá possuir documentação de instalação, execução, arquitetura e testes. |
 | RNF11 | O código deverá ser versionado no Git e disponibilizado em repositório público no GitHub. |
 
-7. Regras de negócio
+## 7. Regras de negócio
 
 | ID | Regra |
 |---|---|
@@ -100,7 +100,7 @@ Desenvolver uma aplicação React que permita selecionar moedas, informar valore
 | RN09 | A exportação deverá ser bloqueada quando o resultado filtrado estiver vazio. |
 | RN10 | Valores de entrada inválidos não deverão gerar uma conversão válida. |
 
-7.1 Decisões de implementação propostas
+### 7.1 Decisões de implementação propostas
 
 - O valor informado deverá ser numérico e maior que zero.
 - Os campos de cotação mínima e máxima deverão aceitar somente valores numéricos válidos.
@@ -108,9 +108,9 @@ Desenvolver uma aplicação React que permita selecionar moedas, informar valore
 - A data inicial não poderá ser posterior à data final.
 - A interface deverá informar quando não houver cotação disponível para a consulta solicitada.
 
-8. Critérios de aceite
+## 8. Critérios de aceite
 
-O projeto será considerado funcional quando:
+O projeto será considerado funcional quando atender aos seguintes critérios:
 
 - [ ] O usuário conseguir selecionar duas moedas.
 - [ ] O usuário conseguir informar um valor e visualizar sua conversão.
@@ -131,7 +131,7 @@ O projeto será considerado funcional quando:
 - [ ] A aplicação funcionar em desktop e celular.
 - [ ] O projeto puder ser instalado e executado seguindo o README.
 
-9. Tecnologias previstas
+## 9. Tecnologias utilizadas
 
 - React
 - JavaScript
@@ -142,16 +142,16 @@ O projeto será considerado funcional quando:
 - React Hooks
 - Custom Hooks
 - Frankfurter API
-- Biblioteca de gráficos (Recharts ou Chart.js)
+- Recharts
 - Postman
 - Git e GitHub
 
-10. Documentação relacionada
+## 10. Documentação relacionada
 
-- `README.md`
-- `docs/COMPONENTS.md`
-- `docs/FIGMA.md`
-- `docs/API_TESTS.md`
-- `docs/FUNCTION_TESTS.md`
-- `docs/AI_USAGE.md`
-- Collection do Postman em JSON
+- `README.md` — apresentação, instalação e execução do projeto.
+- `docs/COMPONENTS.md` — arquitetura e responsabilidades dos componentes.
+- `docs/FIGMA.md` — documentação visual e prototipação.
+- `docs/API_TESTS.md` — testes de integração com a API.
+- `docs/FUNCTION_TESTS.md` — testes funcionais.
+- `docs/AI_USAGE.md` — registro da utilização de inteligência artificial.
+- `postman/currency-exchange-collection.json` — coleção de requisições da API.
