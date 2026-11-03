@@ -1,0 +1,55 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.label {
+  color: #34483b;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.option,
+.active {
+  min-height: 36px;
+  padding: 0 14px;
+  border: 1px solid #d3dfd7;
+  border-radius: 7px;
+  background: #ffffff;
+  color: #34483b;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.option:hover {
+  border-color: #00834b;
+  color: #00834b;
+}
+
+.active {
+  color: #ffffff;
+  background: #006437;
+  border-color: #006437;
+}
+
+@media (max-width: 600px) {
+  .options {
+    gap: 6px;
+  }
+
+  .option,
+  .active {
+    padding: 0 10px;
+    font-size: 11px;
+  }
+}
